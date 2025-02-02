@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE >
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -15,10 +16,353 @@
             }
           }
         }
-      </script>
-</head>
-<body>
     
+        </script>
+        <!-- Daisy UI CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+      
+      <!-- Font Link -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        }
+        .font-pop{
+          font-family: "Poppins", serif;
+        }
+      </style>
+      <script src="https://kit.fontawesome.com/b401c7e25e.js" crossorigin="anonymous"></script>
+</head>
+<body class="container max-w-screen-2xl " >
+    <header class="bg-slate-100 ">
+        <nav class="lg:mx-20 bg-slate-100 ">
+            <div class="navbar  bg-slate-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Product</a></li>
+                      <li>
+                        <a>Services</a>
+                        <ul class="p-2">
+                          <li><a>Order</a></li>
+                          <li><a>Check Details</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl"><img src="./Images/logo-header.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex ">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-sora">Product</a></li>
+                    <li>
+                      <details>
+                        <summary class="font-sora">Services</summary>
+                        <ul class="p-2">
+                          <li><a class="font-sora">Order</a></li>
+                          <li><a class="font-sora">Check Details</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a class="font-sora">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="lg:ml-72 lg:gap-6 lg:flex hidden">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    
+                <a class="btn border-green-600">Login</a>
+                  <a class="btn lg:bg-green-500 text-white">Register</a>
+                </div>
+              </div>
+        </nav>
+        <div class="my-24">
+            <h1 class="font-sora mb-8 text-5xl font-bold  text-center font-sora ">Freshness <span class="text-green-600">You Can <br>
+                Count On</span>, Prices You’ll Love!</h1>
+                <p class="mb-8 text-center font-sora opacity-80">We can proudly say that we're providing you fresh vegetables with no chemicals. <br> So don't wait and start exploring our website</p>
+                <img class="lg:mx-auto lg:w-2/5" src="./Images/hero-vegetables.png" alt="">
+        </div>
+    </header>
+    <main>
+        <!-- Card Items -->
+      <div class="mx-12 lg:mx-20">
+        <div><h1 class="text-5xl font-bold font-sora text-green-600 mb-12">Services</h1></div>
+        <div class="grid grid-cols-1  lg:grid-cols-3 gap-4">
+            <!-- Card 1 -->
+            <div class="card bg-slate-100 w-96 shadow-xl my-12">
+                <figure>
+                  <img class="bg-white rounded-full p-8 my-8"
+                    src="./Images/service.png"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title font-bold mx-auto">
+                    24/7 Services 
+                    
+                  </h2>
+                  <p class="text-center">We are ready give you 24/7 service.Call Us anytime and tell us your problem.We would be happy to solve your problem.</p>
+                 
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="card bg-slate-100 w-96 shadow-xl my-12">
+                <figure>
+                  <img class="bg-white rounded-full p-8 my-8"
+                    src="./Images/delivery.png"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title font-bold mx-auto">
+                    Fast Delivery
+                  </h2>
+                  <p class="text-center">We can assure that we are very punctual abut our time.Once you order it's our duty to deliver to you in the estimated time.</p>
+                 
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="card bg-slate-100 w-96 shadow-xl my-12">
+                <figure>
+                  <img class="bg-white rounded-full p-8 my-8"
+                    src="./Images/healthy.png"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title font-bold mx-auto">
+                    Healthy Products 
+                  </h2>
+                  <p class="text-center">Many organisations  have certified our food 100% healthy.So if you're looking organic food then we can beyour first choice.</p>
+                  
+                </div>
+              </div>
+        </div>
+
+      </div> 
+      <!-- Ratings Section -->
+<div class="bg-[#EFEBE3]">
+  <div>
+    <div class="lg:mx-20 px-8 p-2"><h1 class="text-5xl font-bold font-sora text-green-600 my-12">Popular Products</h1></div>
+  <div class="grid grid-cols-2 lg:mx-20 lg:grid-cols-4 lg:gap-8 p-6 gap-8">
+    <!-- 1 -->
+    <div class="bg-gradient-to-b from-green-500 ...  p-12 rounded-xl col-span-2 lg:row-span-3 lg:col-span-1 ">
+      <h1 class="text-white font-bold text-5xl mb-8">30% off</h1>
+      <p class="mb-8">Only for two days.So grab this chance quickly</p>
+      <button class="bg-white px-6 py-2 rounded-xl">Buy Now</button>
+      <img class="" src="./Images/vegetable-offer.png" alt="">
+     
+    </div>
+    <!-- 2 -->
+    <div class="flex bg-white rounded-xl justify-center items-center">
+      <div class="p-8"><img class="bg-slate-100 rounded-xl" src="./Images/onion.png" alt=""></div>
+      <div>
+        <i class="fa-regular fa-star">4.5</i>
+        <h1 class="font-sora font-bold text-2xl">Onion 1 KG</h1>
+        <p class="font-bold">$39.99</p>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="flex bg-white rounded-xl justify-center items-center">
+      <div class="p-8"><img class="bg-slate-100 rounded-xl" src="./Images/tomato.png" alt=""></div>
+      <div>
+        <i class="fa-regular fa-star">4.5</i>
+        <h1 class="font-sora font-bold text-2xl">Tomato 500 g</h1>
+        <p class="font-bold">$39.99</p>
+      </div>
+    </div>
+    <!-- 4 -->
+    <div class="flex bg-white rounded-xl justify-center items-center">
+      <div class="p-8"><img class="bg-slate-100 rounded-xl" src="./Images/potato.png" alt=""></div>
+      <div>
+        <i class="fa-regular fa-star">4.5</i>
+        <h1 class="font-sora font-bold text-2xl">Potato 1 KG</h1>
+        <p class="font-bold">$39.99</p>
+      </div>
+    </div>
+    <!-- 5 -->
+    <div class="flex bg-white rounded-xl justify-center items-center">
+      <div class="p-8"><img class="bg-slate-100 rounded-xl" src="./Images/tomato.png" alt=""></div>
+      <div>
+        <i class="fa-regular fa-star">4.5</i>
+        <h1 class="font-sora font-bold text-2xl">Tomato 500 g</h1>
+        <p class="font-bold">$39.99</p>
+      </div>
+    </div>
+    <!-- 6 -->
+    <div class="flex bg-white rounded-xl justify-center items-center">
+      <div class="p-8"><img class="bg-slate-100 rounded-xl" src="./Images/onion.png" alt=""></div>
+      <div>
+        <i class="fa-regular fa-star">4.5</i>
+        <h1 class="font-sora font-bold text-2xl">Onion 1 KG</h1>
+        <p class="font-bold">$39.99</p>
+      </div>
+    </div>
+    <!-- 7 -->
+    <div class="flex bg-white rounded-xl justify-center items-center">
+      <div class="p-8"><img class="bg-slate-100 rounded-xl" src="./Images/tomato.png" alt=""></div>
+      <div>
+        <i class="fa-regular fa-star">4.5</i>
+        <h1 class="font-sora font-bold text-2xl">Tomato 500 g</h1>
+        <p class="font-bold">$39.99</p>
+      </div>
+    </div>
+    <!-- 8 -->
+    <div class="flex bg-white rounded-xl justify-center items-center">
+      <div class="p-8"><img class="bg-slate-100 rounded-xl" src="./Images/onion.png" alt=""></div>
+      <div>
+        <i class="fa-regular fa-star">4.5</i>
+        <h1 class="font-sora font-bold text-2xl">Onion 1 KG</h1>
+        <p class="font-bold">$39.99</p>
+      </div>
+    </div>
+    <!-- 9 -->
+    <div class="flex bg-white rounded-xl justify-center items-center">
+      <div class="p-8"><img class="bg-slate-100 rounded-xl" src="./Images/potato.png" alt=""></div>
+      <div>
+        <i class="fa-regular fa-star">4.5</i>
+        <h1 class="font-sora font-bold text-2xl">Potato 1 KG</h1>
+        <p class="font-bold">$39.99</p>
+      </div>
+    </div>
+    <!-- 10 -->
+    <div class="lg:flex bg-white rounded-xl justify-center items-center hidden">
+      <div class="p-8"><img class="bg-slate-100 rounded-xl" src="./Images/potato.png" alt=""></div>
+      <div>
+        <i class="fa-regular fa-star">4.5</i>
+        <h1 class="font-sora font-bold text-2xl">Potato 1 KG</h1>
+        <p class="font-bold">$39.99</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div> 
+<!-- Ad Section -->
+<div class="mx-20 my-20">
+   <div>
+    <h1 class="text-5xl font-bold font-sora text-green-600 my-12">Arrival & Offers</h1>
+   </div>
+   <!-- Grid of AD -->
+<div class="lg:grid lg:grid-cols-2 gap-14 space-y-12 justify-center items-center">
+  <!-- Green -->
+  <div class="bg-green-950 flex justify-around items-center lg:p-20 rounded-2xl p-8">
+    <!-- Intro -->
+   <div class="lg:space-y-16 space-y-8 ">
+    <img src="./Images/dawat-logo.png" alt="">
+    <Button class="bg-green-500 font-pop lg:px-8 lg:text-lg lg:py-2 text-white rounded-lg">Cook Exotic Dishes</Button>
+    <h1 class="text-white lg:text-5xl">UP to <span class="font-bold">20% OFF</span></h1>
+   </div>
+  
+   <div>
+ <img src="./Images/dawat-mock-up.png" alt="">
+   </div>
+</div>
+<div>
+<!-- Blue -->
+<div class="bg-blue-950 flex justify-around items-center lg:p-20 rounded-2xl p-8 ">
+  <!-- Intro -->
+ <div class="lg:space-y-16 space-y-8">
+  <img src="./Images/india-gate-logo.png" alt="">
+  <Button class="bg-blue-500 font-pop lg:px-8 lg:text-lg lg:py-2 text-white rounded-lg">World’s No.1 Rice</Button>
+  <h1 class="text-white lg:text-5xl">UP to <span class="font-bold">40% OFF</span></h1>
+ </div>
+
+ <div>
+<img src="./Images/india-gate-mock-up.png" alt="">
+ </div>
+</div>
+   
+    
+   </div>
+</div>
+<!-- challenge -->
+<div class="bg-slate-300 flex justify-center items-center my-8 p-12 rounded-xl ">
+  <!-- Basket -->
+  <div><img src="./Images/vegetable-busket.png" alt=""></div>
+  <div class="space-y-8">
+    <h1 class="font-sora text-5xl">Get Grocery News!</h1>
+    <p>Exclusive training tips, ticks, product deals and more.</p>
+    <input class="pl-2 py-4 rounded-xl" type="text" placeholder="Enter email...."><br>
+    <button class="bg-green-500 text-white px-8 py-2 rounded-xl">Subscribe</button>
+  </div>
+</div>
+    </main>
+
+    <!-- footer -->
+    
+      <footer class="footer bg-green-600 p-12 text-base-content ">
+        <nav>
+          <img src="./Images/logo-footer.png" alt="">
+          <p class="text-white w-3/4">We have given all details about our website.You can find everything our products details.Thank you</p>
+        </nav>
+        <nav class="text-white">
+          
+          <a class="link link-hover">Product</a>
+          <a class="link link-hover">Contact Us</a>
+          <a class="link link-hover">Services</a>
+         
+        </nav>
+        <nav>
+          <h6 class="footer-title">Social</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </footer>
     
 </body>
 </html>
